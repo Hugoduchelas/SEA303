@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1er graphique</title>
+    <link
+      rel="shortcut icon"
+      href="../media/Favicon/logo spotify.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../style/style-album1.css" />
+  </head>
+  <body>
+    <!-- Bouton Retour -->
+    <button class="back-button" onclick="goBack()">← Back</button>
+
+    <div class="album-details-container">
+      <div class="album-image">
+        <img src="../media/graphique1.png" alt="graphique1" />
+      </div>
+      <div class="album-info">
+        <h1>
+          Est ce que l'heure de la journée joue sur le style musicale écouter ?
+        </h1>
+        <p>
+          L'heure de la journée semble influencer le style musical écouté, comme
+          le montre la variation des genres en fonction des périodes. Le matin,
+          les écoutes sont relativement équilibrées entre plusieurs genres tels
+          que le rock, le rap, le classique et l'electronic/dance, reflétant une
+          diversité musicale. Cependant, l'après-midi, une préférence nette pour
+          un style spécifique (classical + melody + dance) domine, indiquant
+          peut-être une recherche de motivation ou d'énergie accrue pendant
+          cette période active de la journée. En soirée, on observe une montée
+          en popularité des genres tels que la pop, l'electronic/dance et le
+          classique, accompagnée d'une diversité accrue, ce qui pourrait
+          refléter un besoin de détente ou d'ambiance festive. Ces variations
+          suggèrent que les préférences musicales s'adaptent aux moments de la
+          journée et aux activités associées, soulignant l'impact du contexte
+          temporel sur les choix musicaux.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      // Fonction JavaScript pour revenir en arrière
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+  </body>
+</html>

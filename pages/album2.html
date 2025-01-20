@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2ème graphique</title>
+    <script src="../src/dependancies/d3.min.js" defer></script>
+    <script src="../src/dependancies/plotly-2.14.0.min.js" defer></script>
+    <script type="module" src="../src/graph-album2.js"></script>
+    <link rel="stylesheet" href="../style/style-album2.css" />
+    <link
+      rel="shortcut icon"
+      href="../media/Favicon/logo spotify.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- Bouton Retour -->
+    <button class="back-button" onclick="goBack()">← Back</button>
+
+    <div class="album-details-container">
+      <div class="album-image">
+        <div id="plot"></div>
+        <select id="selection">
+          <option value="base">Choisissez un graphique</option>
+          <option value="energy_%">Musique plus ou moins énergique</option>
+          <option value="danceability_%">Musique plus ou moins dansante</option>
+          <option value="valence_%">Musique plus ou moins positive</option>
+          <option value="acousticness_%">
+            Musique plus ou moins acoustique
+          </option>
+          <option value="instrumentalness_%">
+            Musique plus ou moins instrumentale
+          </option>
+        </select>
+      </div>
+
+      <div class="album-info">
+        <h1>Pourquoi certaines musiques sont plus écouté que d'autres ?</h1>
+        <p>
+          Dans la musique, il y a plusieurs critères qui font qu'une musique
+          sera plus écoutée qu'une autre. Avec ces différents graphiques que
+          vous pouvez sélectionner, vous pouvez observer ce qu'une musique fait
+          qu'elle est plus écouter que d'autre.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      // Fonction JavaScript pour revenir en arrière
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page utilisateur</title>
+    <script src="../src/dependancies/d3.min.js" defer></script>
+    <script src="../src/dependancies/plotly-2.14.0.min.js" defer></script>
+    <script type="module" src="../src/graph-user.js"></script>
+    <link rel="stylesheet" href="../style/style-user.css" />
+    <link
+      rel="shortcut icon"
+      href="../media/Favicon/logo spotify.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- Bouton Retour -->
+    <button class="back-button" onclick="goBack()">← Back</button>
+
+    <main>
+      <section>
+        <div class="user-details-container">
+          <div id="user-graph1"></div>
+          <div class="user-info">
+            <h1>Répartition des genres sur spotify</h1>
+            <p>
+              Avec ce graphique, on peut voir que les femmes sont généralement
+              plus présentes sur l'application spotify avec 75,2 % de présence
+              contre 21,9 % pour les hommes. Les 2,88 % restant sont des
+              personnes qui ne s'identifie pas en tant que femme ou homme.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="user-details-container">
+          <div id="user-graph2"></div>
+          <div class="user-info">
+            <h1>Les ages</h1>
+            <p>
+              La répartition des âges sur l'application peut se voir assez
+              facilement avec ce genre de graphique. Ici, on peut voir que les
+              personnes de tout genre entre 20 - 35 ans sont beaucoup plus
+              présent sur l'application suivie par les 12 - 20 ans. On peut voir
+              aussi avec ce graphique la répartition entre les contenus préférer
+              des utilisateurs ; la musique ou les podcasts.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      // Fonction JavaScript pour revenir en arrière
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+  </body>
+</html>

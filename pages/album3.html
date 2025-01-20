@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3ème graphique</title>
+    <script src="../src/dependancies/d3.min.js" defer></script>
+    <script src="../src/dependancies/plotly-2.14.0.min.js" defer></script>
+    <script type="module" src="../src/index.js"></script>
+    <link rel="stylesheet" href="../style/style-album3.css" />
+    <link
+      rel="shortcut icon"
+      href="../media/Favicon/logo spotify.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- Bouton Retour -->
+    <button class="back-button" onclick="goBack()">← Back</button>
+
+    <div class="album-details-container">
+      <div class="album-image">
+        <img
+          src="../media/Graphique3_Plan de travail 1 copie 2.png"
+          alt="graphique3"
+        />
+      </div>
+      <div class="album-info">
+        <h1>
+          Quel sont les appareils électroniques les plus utilisés pour écouter
+          de la musique ?
+        </h1>
+        <p>
+          Le graphique met en évidence les préférences des utilisateurs en
+          matière d'appareils électroniques pour écouter de la musique. Les
+          données sont regroupées en fonction des types d'appareils les plus
+          courants, tels que : 
+          <ul>
+            <li>Téléphone : l'appareil dominant, utilisé par une majorité d'utilisateurs pour sa praticité et son intégration avec les services de streaming.</li>
+            <li>
+              Ordinateur : encore utilisés par certains, notamment par les personnes, préfère avoir un visuel plus large que sur un téléphone.
+            </li>
+            <li>
+              Assistant vocal : avec Siri et GEMINI qui sont dans la majorité des téléphones utilisés, lancé de la musique est encore plus facile avec une seul commande vocale.
+            </li>
+          </ul>      
+        </p>
+      </div>
+    </div>
+
+    <script>
+      // Fonction JavaScript pour revenir en arrière
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+  </body>
+</html>

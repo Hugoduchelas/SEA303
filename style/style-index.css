@@ -1,0 +1,121 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #121212;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #1db954;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 10px 0;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.sidebar .playlist-links h4 {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.sidebar .playlist-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar .playlist-links ul li {
+    margin: 5px 0;
+}
+
+.sidebar .playlist-links ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.user {
+    border: none;
+    margin: 0;
+    width: 10vh;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #181818;
+}
+
+/* Main Content */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #181818;
+}
+
+.main-content header {
+    margin-bottom: 20px;
+}
+
+.main-content h1 {
+    font-size: 2.5em;
+}
+
+.main-content h2 {
+    margin-top: 20px;
+    font-size: 1.8em;
+}
+
+/* Album Grid */
+.grid {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.album {
+    text-align: center;
+    width: 150px;
+}
+
+.album .album-art {
+    width: 150px;
+    height: 150px;
+    background-color: #191414;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.album p {
+    font-size: 0.9em;
+    color: #ccc;
+}

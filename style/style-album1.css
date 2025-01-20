@@ -1,0 +1,60 @@
+/* Styles for the album 1 details page */
+body {
+    margin: 0;
+}
+
+.album-details-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #191414;
+    text-align: justify;
+}
+
+.album-image>img {
+    margin-right: 50px;
+    width: 50vh;
+    height: auto;
+}
+
+.album-info {
+    max-width: 600px;
+}
+
+.album-info h1 {
+    font-size: 2.5em;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.album-info p {
+    font-size: 1.2em;
+    font-family: sans-serif;
+    line-height: 1.5;
+    color: #fff;
+}
+
+/* Style du bouton Retour */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #1db954;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #1aa34a;
+}
+
+
+
+
